@@ -14,12 +14,12 @@ body {
 
 .top-ui {
   gap: 10rem;
-  background-color: rgb(72, 71, 71);
+  background-color: rgb(45, 45, 45);
 }
 
 #winner-annoucement {
   font-size: 48px;
-  color: green;
+  color: rgb(52, 231, 52);
 }
 
 p {
@@ -38,9 +38,24 @@ p {
   margin-top: 2rem;
 }
 
-.game-board > div {
-  background-color: white;
-  height: 300px;
-  width: 230px;
+.game-board > div,
+.cards > div {
+  height: 234px;
+  width: 188px;
   border-radius: 10px;
+}
+
+.game-board > div {
+  background-color: rgb(162, 162, 162);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 8rem;
+}
+
+.cards > div {
+  background-color: white;
 }
