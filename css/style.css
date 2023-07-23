@@ -5,10 +5,19 @@ body {
   between the top div ui color*/
 }
 
-#top-ui {
+#top-ui,
+#score {
   display: flex;
   justify-content: space-evenly;
+  color: white;
+}
+
+#top-ui {
   gap: 10rem;
   background-color: rgb(72, 71, 71);
-  color: white;
+}
+
+#score {
+  gap: 18rem;
+  margin-top: 2rem;
 }
