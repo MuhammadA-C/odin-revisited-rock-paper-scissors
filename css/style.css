@@ -5,19 +5,42 @@ body {
   between the top div ui color*/
 }
 
-#top-ui,
-#score {
+.top-ui,
+.score {
   display: flex;
   justify-content: space-evenly;
   color: white;
 }
 
-#top-ui {
+.top-ui {
   gap: 10rem;
   background-color: rgb(72, 71, 71);
 }
 
-#score {
+#winner-annoucement {
+  font-size: 48px;
+  color: green;
+}
+
+p {
+  font-size: 24px;
+}
+
+.score {
   gap: 18rem;
+  margin-top: 1rem;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
   margin-top: 2rem;
+}
+
+.game-board > div {
+  background-color: white;
+  height: 300px;
+  width: 230px;
+  border-radius: 10px;
 }
