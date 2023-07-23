@@ -1,1 +1,14 @@
+body {
+  background-color: gray;
+  margin: 0;
+  /*Had to set the body element margin to 0 to make everything flush/no gap 
+  between the top div ui color*/
+}
 
+#top-ui {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+  background-color: rgb(72, 71, 71);
+  color: white;
+}
