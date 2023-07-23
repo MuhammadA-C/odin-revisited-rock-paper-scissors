@@ -3,11 +3,6 @@ Name: Muhammad
 Course: The Odin Project - Foundations
 Date: 07/20/2023
   
-Overview: This is version 1 of the Rock, Paper, and Scissors Project in 
-The Odin Project Foundations course. 
-
-For this project you're supposed to create a rock, paper, and scissors console game
-where the player can play against the computer. 
 */
 
 game(5);
