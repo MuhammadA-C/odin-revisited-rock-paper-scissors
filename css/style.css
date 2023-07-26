@@ -80,5 +80,5 @@ p {
 
 /*The style below will only appear if the class is toggled on in JavaScript*/
 .played-cards > div {
-  background-color: blue;
+  background-color: rgb(225, 240, 255);
 }
