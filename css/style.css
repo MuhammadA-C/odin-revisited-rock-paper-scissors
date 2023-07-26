@@ -1,5 +1,11 @@
+:root {
+  --light-blue: #a5d7e8;
+  --dark-blue: #0b2447;
+  --gray-blue: #90adb6;
+}
+
 body {
-  background-color: gray;
+  background-color: #19376d;
   margin: 0;
   /*Had to set the body element margin to 0 to make everything flush/no gap 
   between the top div ui color*/
@@ -9,17 +15,17 @@ body {
 .score {
   display: flex;
   justify-content: space-evenly;
-  color: white;
+  color: var(--light-blue);
 }
 
 .top-ui {
   gap: 10rem;
-  background-color: rgb(45, 45, 45);
+  background-color: var(--dark-blue);
 }
 
 #winner-annoucement {
   font-size: 48px;
-  color: rgb(52, 231, 52);
+  color: rgb#576CBC;
 }
 
 p {
@@ -43,10 +49,15 @@ p {
   height: 234px;
   width: 188px;
   border-radius: 10px;
+
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--light-blue);
 }
 
 .game-board > div {
-  background-color: rgb(162, 162, 162);
+  background-color: #617880;
+  border-color: var(--dark-blue);
 }
 
 .cards {
@@ -57,23 +68,17 @@ p {
 }
 
 .cards > div {
-  background-color: white;
+  background-color: var(--light-blue);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*The style below will only appear if the class is toggled on in JavaScript*/
-.selected-card {
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgb(233, 201, 43);
+.cards > div:hover {
+  background-color: var(--gray-blue);
 }
 
 /*The style below will only appear if the class is toggled on in JavaScript*/
-#played-cards > div {
-  background-color: white;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(92, 92, 92);
+.played-cards > div {
+  background-color: blue;
 }
