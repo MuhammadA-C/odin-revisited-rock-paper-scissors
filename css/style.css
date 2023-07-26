@@ -25,7 +25,7 @@ body {
 
 #annoucement {
   font-size: 48px;
-  color: rgb#576CBC;
+  color: #ffffff;
 }
 
 p {
@@ -80,5 +80,5 @@ p {
 
 /*The style below will only appear if the class is toggled on in JavaScript*/
 .played-cards > div {
-  background-color: rgb(225, 240, 255);
+  background-color: rgb(241, 248, 255);
 }
