@@ -23,7 +23,7 @@ body {
   background-color: var(--dark-blue);
 }
 
-#winner-annoucement {
+#annoucement {
   font-size: 48px;
   color: rgb#576CBC;
 }
