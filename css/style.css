@@ -38,7 +38,7 @@ p {
 }
 
 .score {
-  gap: 18rem;
+  gap: 14.5rem;
   margin-top: 2.5rem;
 }
 
@@ -79,6 +79,6 @@ p {
   align-items: center;
 }
 
-.cards > div:hover {
+.card-hover-effect:hover {
   background-color: var(--gray-blue);
 }
