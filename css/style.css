@@ -1,7 +1,7 @@
 :root {
   --light-blue: #a5d7e8;
   --dark-blue: #0b2447;
-  --gray-blue: #90adb6;
+  --gray-blue: #68777b;
 }
 
 body {
@@ -24,21 +24,17 @@ p {
 }
 
 .top-ui {
-  gap: 10rem;
+  gap: 35rem;
   background-color: var(--dark-blue);
 }
 
 .annoucement > :first-child {
   font-size: 48px;
   color: #ffffff;
-}
-
-.annoucement > :first-child {
   margin-bottom: 1rem;
 }
 
 .score {
-  gap: 11rem;
   margin-top: 2.5rem;
 }
 
@@ -46,6 +42,11 @@ p {
 .computer-score {
   display: flex;
   gap: 0.5rem;
+}
+
+.computer-score,
+.top-ui > :last-child {
+  color: white;
 }
 
 .game-board {
@@ -70,9 +71,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-color: var(--dark-blue);
   font-size: 48px;
+}
+
+.game-board > :last-child {
+  background-color: white;
+}
+
+.game-board > :first-child {
+  background-color: var(--light-blue);
 }
 
 .cards {

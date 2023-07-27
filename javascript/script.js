@@ -1,8 +1,15 @@
 /*
-Name: Muhammad
-Course: The Odin Project - Foundations
+Name: Muhammad Chambers
 Date: 07/26/2023
-  
+
+Course: The Odin Project - Foundations
+
+Overview: This Porject was apart of The Odin Project - Foundations course.
+For this project you were supposed to convert your console game of Rock, Paper, Scissors 
+into a version that has a GUI.
+
+Note: I ended up deleting all the previous code i had written for the console version
+of this game and started all over. 
 */
 const rockCard = document.querySelector(".cards > :first-child");
 const paperCard = document.querySelector(".cards > :nth-child(2)");
@@ -107,6 +114,12 @@ function setPlayedCard(card, number) {
   }
 }
 
+/*
+  Note: Because I allow the player to play more rounds after they click OK
+  on the Game Over alert, I had to reset these values below. If I didn't 
+  reset the values then the data stored in them from previous games would
+  persist in new games.
+*/
 function resetValues() {
   announceWinner.textContent = "Select a Card";
   playerScoreUI.textContent = 0;
@@ -131,7 +144,7 @@ function announceGameWinner() {
 function game(playerSelectedCard) {
   let computerSelectedCard = randomNumberGenerator();
 
-  if (roundNumber >= maxRounds) {
+  if (roundNumber === maxRounds) {
     announceGameWinner();
     resetValues();
     return;
@@ -141,18 +154,18 @@ function game(playerSelectedCard) {
   setPlayedCard(computersPlayedCard, computerSelectedCard);
 
   if (didYouWin(playerSelectedCard, computerSelectedCard)) {
-    announceWinner.textContent = "You Win!";
+    announceWinner.textContent = `(${roundNumber + 1}) You Win!`;
     playerScore++;
     playerScoreUI.textContent = playerScore;
-    console.log("You Win!");
+    console.log(`(${roundNumber + 1}) You Win!`);
   } else if (didYouTie(playerSelectedCard, computerSelectedCard)) {
-    announceWinner.textContent = "You Tied!";
-    console.log("You Tied");
+    announceWinner.textContent = `(${roundNumber + 1}) You Tied!`;
+    console.log(`(${roundNumber + 1}) You Tied!`);
   } else if (didYouWin(computerSelectedCard, playerSelectedCard)) {
-    announceWinner.textContent = "You Lose!";
+    announceWinner.textContent = `(${roundNumber + 1}) You Lose!`;
     computerScore++;
     computerScoreUI.textContent = computerScore;
-    console.log("You Lose!");
+    console.log(`(${roundNumber + 1}) You Lose!`);
   } else {
     console.log("Error");
   }
