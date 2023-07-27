@@ -11,6 +11,11 @@ body {
   between the top div ui color*/
 }
 
+p {
+  font-size: 24px;
+  margin: 0;
+}
+
 .top-ui,
 .score {
   display: flex;
@@ -28,20 +33,20 @@ body {
   color: #ffffff;
 }
 
-p {
-  font-size: 24px;
+.annoucement > :first-child {
+  margin-bottom: 1rem;
 }
 
 .score {
   gap: 18rem;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .game-board {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 
 .game-board > div,
@@ -64,7 +69,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 4rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .cards > div {
