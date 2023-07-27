@@ -23,7 +23,7 @@ body {
   background-color: var(--dark-blue);
 }
 
-#annoucement {
+.annoucement > :first-child {
   font-size: 48px;
   color: #ffffff;
 }
@@ -76,9 +76,4 @@ p {
 
 .cards > div:hover {
   background-color: var(--gray-blue);
-}
-
-/*The style below will only appear if the class is toggled on in JavaScript*/
-.played-cards > div {
-  background-color: rgb(241, 248, 255);
 }
