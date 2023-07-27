@@ -38,8 +38,14 @@ p {
 }
 
 .score {
-  gap: 14.5rem;
+  gap: 11rem;
   margin-top: 2.5rem;
+}
+
+.player-score,
+.computer-score {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .game-board {
@@ -61,8 +67,12 @@ p {
 }
 
 .game-board > div {
-  background-color: #617880;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   border-color: var(--dark-blue);
+  font-size: 48px;
 }
 
 .cards {
