@@ -3,10 +3,10 @@ The Odin Project : Foundations : (Revisited) Rock Paper Scissors Project - added
 
 ---
 
-**Overview:** This project is supposed to allow a player play against the computer in a game of rock, paper, and scissors. 
+**Overview:** This project is supposed to allow a player to play against the computer in a game of rock, paper, and scissors. 
 
 GUI:
-For this verison of the project, we had to create a GUI using HTML and CSS. 
+For this version of the project, we had to create a GUI using HTML and CSS. 
 
 Playing The Game: 
 In this version, the user no longer has to enter into a prompt box to play the game. 
